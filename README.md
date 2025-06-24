@@ -1,7 +1,7 @@
 AI Guardian Bot 🤖
 
 Private Telegram AI moderator bot, fully integrated with Wix Studio backend using Velo, `webhooks`, `databases`, and OpenAI API.  
-Built to automate moderation, translation, transcription and more — all managed via WebApp inside Telegram.
+Built to automate moderation, translation, transcription and more — all managed via WebApp inside Telegram web app.
 
 ---
 
@@ -20,7 +20,7 @@ Built to automate moderation, translation, transcription and more — all manage
 
 🔒 Note
 
-This repository is private and the bot is part of a commercial project on Wix Studio.  
+This bot is part of a commercial project on Wix Studio.  
 If you're interested in building a similar AI-powered bot for your group or product — feel free to reach out via:
 
 🌐 [https://www.365jpg.art] 
