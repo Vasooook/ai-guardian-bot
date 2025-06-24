@@ -8,7 +8,7 @@ import { Buffer } from 'buffer';
 import axios from 'axios';
 import { detectLang } from 'backend/AIModerBot/lang-utils.js';
 
-const BOT_TOKEN = "7979819200:AAGyErTTU7VnPVLyG7557TSk-5_CPOnexGk";
+const BOT_TOKEN = "";
 const TELEGRAM_API = `https://api.telegram.org/bot${BOT_TOKEN}`;
 export const LANG = {
     en: {
