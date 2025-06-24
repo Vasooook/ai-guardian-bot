@@ -1,5 +1,8 @@
 AI Guardian Bot 🤖
 
+[![Hire on Upwork](https://img.shields.io/badge/Upwork-Hire%20Me-brightgreen?logo=Upwork)](https://www.upwork.com/freelancers/~017752a03bdc66874d)
+
+
 Private Telegram AI moderator bot, fully integrated with Wix Studio backend using Velo, `webhooks`, `databases`, and OpenAI API.  
 Built to automate moderation, translation, transcription and more — all managed via WebApp inside Telegram web app.
 
