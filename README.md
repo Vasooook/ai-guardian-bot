@@ -39,6 +39,35 @@ If you’re looking to **implement a similar solution** or require help adapting
 
 ---
 
+## 🤖 Explore More: AI Guardian Bot
+
+Looking for advanced AI-based automation?  
+Try out my **Telegram AI moderator bot** – fully built on **Wix Studio backend**, using OpenAI and custom WebApp interface.
+
+> 🔗 **Try it live:** [@guardian_moderator_bot](https://t.me/guardian_moderator_bot)
+
+[![Telegram](https://img.shields.io/badge/Telegram-Bot-blue?logo=telegram)](https://t.me/guardian_moderator_bot)
+[![Wix Studio](https://img.shields.io/badge/Built%20with-Wix%20Studio-blueviolet?logo=wix&logoColor=white)](https://www.wix.com/studio)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4-brightgreen?logo=openai)](https://openai.com)
+[![Upwork](https://img.shields.io/badge/Hire%20Me-Upwork-brightgreen?logo=Upwork)](https://www.upwork.com/freelancers/~017752a03bdc66874d)
+
+---
+
+🛠 **Tech highlights:**
+
+- GPT-powered **AI moderation**
+- Whisper-based **voice transcription**
+- **Auto-translation** and language filtering
+- Admin panel via **Telegram WebApp**
+- **Subscription system** (WayForPay)
+- Works with **multiple Telegram groups**
+- All logic built in `Velo` (Wix Studio backend)
+
+🧠 _Curious about how it works or want something similar?_  
+Let’s connect at [365jpg.art](https://www.365jpg.art) or reach out on [Upwork](https://www.upwork.com/freelancers/~017752a03bdc66874d).
+
+---
+
 ## 📞 Get in Touch
 
 🌐 [https://www.365jpg.art](https://www.365jpg.art)  
