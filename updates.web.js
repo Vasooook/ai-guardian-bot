@@ -1,5 +1,5 @@
 import { items } from '@wix/data';
-const COLLECTION = "TelegramUpdates";
+const COLLECTION = "DB";
 
 export async function setStatus(chatId, status, extra = {}) {
     const _id = String(chatId);
