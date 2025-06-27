@@ -319,7 +319,7 @@ export const confirmGroupOwner = webMethod(Permissions.Anyone, async ({ userId }
 
 export async function sendTelegramWebAppButton(chatId, label, userId, name, lang) {
     try {
-        const url = `https://365jpg.art/ai-panel?user=${userId}&name=${encodeURIComponent(name)}&lang=${lang}`;
+        const url = `https://your-domain/ai-panel?user=${userId}&name=${encodeURIComponent(name)}&lang=${lang}`;
         const res = await fetch(`${TELEGRAM_API}/sendMessage`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -536,9 +536,9 @@ export async function handleGroupMembershipUpdate(update) {
 
         // Бот удалён из группы — удаляем запись
         if (newStatus === 'left') {
-            const q = await items.query('TelegramGroups').eq('chatId', chatId).limit(1).find();
+            const q = await items.query('Groups').eq('chatId', chatId).limit(1).find();
             if (q.items.length) {
-                await items.remove('TelegramGroups', q.items[0]._id);
+                await items.remove('Groups', q.items[0]._id);
                 console.log(`🗑️ Удалили запись для chatId=${chatId}`);
             }
             return;
@@ -551,7 +551,7 @@ export async function handleGroupMembershipUpdate(update) {
         }
 
         // Проверка, существует ли уже запись
-        const q2 = await items.query('TelegramGroups').eq('chatId', chatId).limit(1).find();
+        const q2 = await items.query('Groups').eq('chatId', chatId).limit(1).find();
         const existing = q2.items[0];
         console.log('🔍 existing record:', existing);
 
@@ -586,10 +586,10 @@ export async function handleGroupMembershipUpdate(update) {
         let recordId;
         if (existing) {
             recordId = existing._id;
-            await items.update('TelegramGroups', { _id: recordId, ...record });
+            await items.update('Groups', { _id: recordId, ...record });
             console.log('⬆️ Обновили запись, _id=', recordId);
         } else {
-            const inserted = await items.insert('TelegramGroups', record);
+            const inserted = await items.insert('Groups', record);
             recordId = inserted._id;
             console.log('🆕 Вставили новую запись, _id=', recordId);
         }
