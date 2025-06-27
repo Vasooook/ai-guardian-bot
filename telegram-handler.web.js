@@ -263,16 +263,16 @@ export async function getTelegramFileUrl(fileId) {
 }
 
 async function addViolationToGroup(chatId, violation) {
-    const result = await items.query("TelegramViolations").eq("chatId", chatId).limit(1).find();
+    const result = await items.query("Violations").eq("chatId", chatId).limit(1).find();
     const existing = result.items[0];
 
     if (existing) {
-        await items.save("TelegramViolations", {
+        await items.save("Violations", {
             ...existing,
             violations: [...(existing.violations || []), violation]
         });
     } else {
-        await items.save("TelegramViolations", {
+        await items.save("Violations", {
             chatId,
             groupTitle: null,
             violations: [violation]
