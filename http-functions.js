@@ -72,7 +72,7 @@ export function get_orderStatus(request) {
         return badRequest({ body: { message: "Missing orderReference" } });
     }
 
-    return items.query("Orders")
+    return items.query("TelegramOrders")
         .eq("orderReference", orderReference)
         .find()
         .then((results) => {
