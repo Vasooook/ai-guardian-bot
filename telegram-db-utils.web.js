@@ -1,7 +1,7 @@
 import { items } from '@wix/data';
 
 export async function saveToTelegramGroups(partialData, identifierType = 'linkedUser') {
-    const COLLECTION = 'TelegramGroups';
+    const COLLECTION = 'Groups';
 
     if (!['chatId', 'linkedUser', 'ownerId'].includes(identifierType)) {
         throw new Error(`Invalid identifierType: ${identifierType}`);
