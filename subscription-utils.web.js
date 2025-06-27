@@ -16,13 +16,13 @@ export async function updateTelegramGroupSubscription(orderReference, transactio
 
     const isSuccess = ["approved", "success"].includes(transactionStatus.toLowerCase());
 
-    const tgQuery = await items.query("TelegramGroups")
+    const tgQuery = await items.query("Groups")
         .eq("linkedUser", linkedUser)
         .limit(1)
         .find();
 
     if (!tgQuery.items.length) {
-        console.warn(`⚠️ TelegramGroups не найдена по linkedUser=${linkedUser}`);
+        console.warn(`⚠️ Groups не найдена по linkedUser=${linkedUser}`);
         return;
     }
 
@@ -49,10 +49,10 @@ export async function updateTelegramGroupSubscription(orderReference, transactio
     };
 
     try {
-        await items.save("TelegramGroups", updatedItem);
-        console.log(`✅ TelegramGroups обновлён для linkedUser=${linkedUser}`);
+        await items.save("Groups", updatedItem);
+        console.log(`✅ Groups обновлён для linkedUser=${linkedUser}`);
     } catch (err) {
-        console.error("❌ Ошибка при сохранении TelegramGroups:", err);
+        console.error("❌ Ошибка при сохранении Groups:", err);
     }
 }
 
