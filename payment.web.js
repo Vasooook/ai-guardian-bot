@@ -16,7 +16,7 @@ export const generateWayForPaySubscriptionParams = webMethod(Permissions.Anyone,
     const productCount = [1];
     const productPrice = [amount];
 
-    const returnUrl = `https://www.365jpg.art/ai-panel?user=${userId}&order=${orderReference}&lang=${langCode}&name=${firstName}`;
+    const returnUrl = `https://www.your-domain/ai-panel?user=${userId}&order=${orderReference}&lang=${langCode}&name=${firstName}`;
 
 
     const signatureString = [
