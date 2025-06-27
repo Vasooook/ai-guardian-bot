@@ -36,13 +36,13 @@ export const generateWayForPaySubscriptionParams = webMethod(Permissions.Anyone,
         .update(signatureString)
         .digest('hex');
 
-    // 🔁 Обновление TelegramGroups
+    // 🔁 Обновление Groups
     const linkedUser = parseInt(userId, 10);
     if (isNaN(linkedUser)) {
         throw new Error("Invalid userId — cannot convert to number.");
     }
 
-    const COLLECTION = 'TelegramGroups';
+    const COLLECTION = 'Groups';
 
     try {
         const query = await items.query(COLLECTION)
